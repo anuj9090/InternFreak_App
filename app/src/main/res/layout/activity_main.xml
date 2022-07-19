@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/linearLayout_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageButton
+                android:id="@+id/back_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="start"
+                android:backgroundTint="#101725"
+                app:srcCompat="@drawable/left"
+                app:tint="#2257bd" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="60dp"
+                android:text="Job / Intern Details"
+                android:textColor="@color/white"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:backgroundTint="#101725"
+                app:tint="#2257bd"
+                app:srcCompat="@drawable/share"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@id/scrollView_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout_1">
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                app:neumorph_shadowColorLight="#252525"
+                app:neumorph_shadowColorDark="@color/black"                app:neumorph_shadowElevation="10dp"
+                app:neumorph_shapeType="basin">
+
+
+                <ImageView
+                    android:id="@+id/company_image"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitCenter"
+                    android:layout_height="150dp"
+
+                 />
+
+
+
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="  Company "
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/company"
+                />
+
+            <TextView
+                android:id="@+id/company_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="-24dp"
+                android:layout_marginRight="30dp"
+                android:textColor="#2972fe"
+                android:textSize="16dp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="  Batch "
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/graduation_hat"
+                />
+
+            <TextView
+                android:id="@+id/batch_op"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="-24dp"
+                android:layout_marginRight="30dp"
+                android:textColor="#2972fe"
+                android:textSize="16dp"
+                android:textStyle="bold"
+
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="  Location "
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/location"
+                />
+
+
+            <TextView
+                android:id="@+id/location_op"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="-24dp"
+                android:layout_marginRight="30dp"
+                android:textColor="#2972fe"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="370dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="#394452" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView_1"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:layout_constraintBottom_toTopOf="@id/last_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout_2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/designation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Designation : "
+                    android:textColor="@color/white"
+                    android:drawablePadding="10dp"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/dot_l"
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/ctc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/dot_l"
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/khaliDabbaHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/dot_l"/>
+
+
+
+
+                <TextView
+                    android:id="@+id/khaliDabbaDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"                    android:lineSpacingExtra="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:drawablePadding="10dp"
+
+                    android:drawableLeft="@drawable/dot"/>
+
+
+
+                <TextView
+                    android:id="@+id/requirements_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/dot_l"
+                    />
+
+
+                <TextView
+                    android:id="@+id/requirements_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"                    android:lineSpacingExtra="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/dot"/>
+
+
+
+
+                <TextView
+                    android:id="@+id/requirements_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"                    android:lineSpacingExtra="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/dot"/>
+
+
+                <TextView
+                    android:id="@+id/requirements_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"                    android:lineSpacingExtra="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:drawablePadding="10dp"
+
+                    android:drawableLeft="@drawable/dot"
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/requirements_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"                    android:lineSpacingExtra="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:drawablePadding="10dp"
+
+                    android:drawableLeft="@drawable/dot"
+                    />
+
+
+
+
+                <TextView
+                    android:id="@+id/requirements_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"                    android:lineSpacingExtra="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:drawablePadding="10dp"
+
+                    android:drawableLeft="@drawable/dot"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <View
+            android:id="@+id/last_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#394452"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/scrollView_1" />
+
+        <LinearLayout
+            android:id="@id/linearLayout_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/last_line">
+
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="65dp"
+                android:backgroundTint="#101725"
+                app:tint="#2257bd"
+                app:srcCompat="@drawable/share"
+          />
+
+            <Button
+                android:id="@+id/applynow"
+                android:layout_width="280dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="#2972fe"
+                android:text="Apply Now !"
+                android:textColor="#ffffff"
+                app:cornerRadius="100dp" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
+
+
+
+
+
