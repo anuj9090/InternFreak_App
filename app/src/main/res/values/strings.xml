@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application 2</string>
+    <string name="app_name">InternFreak</string>
     <string name="title_activity_main3">MainActivity3</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -23,4 +23,38 @@
     <string name="image_view_item_transform_content_description">Represents an image view in the
         item
     </string>
+    <string name="resume_tips"># Tip 1 - Avoid Using 2 Columns Resume As It Is Not ATS Friendly.\n\n# Tip 2 - Prepare Role Specific Resume. Read The Job Description And Requirements And Prepare Your Resume Accordingly.\n\n# Tip 3 - Things Not To Mention In Your Resume : \n• DOB\n• Photo \n• Religious Affiliation\n\n# Tip 4 - Try Adding Numbers And Quantify As Many Bullet Points As Possible.\n\n# Tip 5 - If You Are A Fresher, Stick To One Page Resume Only.</string>
+
+
+    <string name="Note">Imp. Note: Never Ever Lie In Your Resume Because Honesty Is Something That Companies Don\'t Compromise On.</string>
+
+    <string name="group1">What Is InternFreak?</string>
+    <string name="group2">Does InternFreak Guarantee Job/Internship ? </string>
+    <string name="group3">Group 3</string>
+    <string name="group4">Group 4</string>
+    <string name="group5">Group 5</string>
+
+    <string-array name="group1">
+        <item>At Intern Freak We Post Daily updates on internships and job postings!
+Our vision is to empower the youth of our nation and make them Atmanirbhar (Self-dependent). By providing them with all kinds of opportunities from various sectors, sharing knowledge and make them competent enough so that they could excel in any field.</item>
+    </string-array>
+
+
+    <string-array name="group2">
+        <item>We don not guarantee a job/internship, but what we do guarantee is that you would not miss any updates from us.  </item>
+    </string-array>
+
+    <string-array name="group3">
+        <item>item 1</item>
+    </string-array>
+
+    <string-array name="group4">
+        <item>item 1</item>
+    </string-array>
+
+    <string-array name="group5">
+        <item>item 1</item>
+    </string-array>
+
+
 </resources>

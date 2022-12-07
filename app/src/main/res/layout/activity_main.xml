@@ -14,9 +14,9 @@
 
         <LinearLayout
             android:id="@+id/linearLayout_1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
             android:orientation="horizontal"
             app:layout_constraintBottom_toTopOf="@id/linearLayout_2"
             app:layout_constraintEnd_toEndOf="parent"
@@ -24,34 +24,30 @@
             app:layout_constraintTop_toTopOf="parent">
 
 
-            <ImageButton
-                android:id="@+id/back_button"
+            <Button
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="start"
                 android:backgroundTint="#101725"
-                app:srcCompat="@drawable/left"
-                app:tint="#2257bd" />
+                android:drawableTop="@drawable/left"
+                android:drawableTint="#2257bd"
+                app:cornerRadius="11dp"
+                android:onClick="go_to_home"
+
+                />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="60dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="60dp"
-                android:text="Job / Intern Details"
+                android:text="Details"
                 android:textColor="@color/white"
                 android:textSize="19dp"
                 android:textStyle="bold" />
 
-            <ImageButton
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_gravity="right"
-                android:backgroundTint="#101725"
-                app:tint="#2257bd"
-                app:srcCompat="@drawable/share"
-            />
+
         </LinearLayout>
 
         <LinearLayout
@@ -68,19 +64,21 @@
                 style="@style/Widget.Neumorph.CardView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginBottom="15dp"
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="25dp"
-                app:neumorph_shadowColorLight="#252525"
-                app:neumorph_shadowColorDark="@color/black"                app:neumorph_shadowElevation="10dp"
+                app:neumorph_shadowColorLight="#11131b"
+                app:neumorph_shadowColorDark="@color/black"
+                app:neumorph_shadowElevation="5dp"
                 app:neumorph_shapeType="basin">
 
 
                 <ImageView
                     android:id="@+id/company_image"
                     android:layout_width="match_parent"
-                    android:scaleType="fitCenter"
+                    android:scaleX="1.03"
+                    android:scaleType="fitXY"
                     android:layout_height="150dp"
 
                  />
@@ -95,11 +93,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
-                android:text="  Company "
+                android:text="○ Company "
                 android:textColor="@color/white"
                 android:textSize="16dp"
+                android:fontFamily="sans-serif-condensed"
+                android:letterSpacing="0.1"
                 android:textStyle="bold"
-                android:drawableLeft="@drawable/company"
                 />
 
             <TextView
@@ -111,6 +110,7 @@
                 android:layout_marginRight="30dp"
                 android:textColor="#2972fe"
                 android:textSize="16dp"
+                android:letterSpacing="0.1"
                 android:textStyle="bold"
 
                 />
@@ -120,11 +120,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
-                android:text="  Batch "
+                android:text="○ Batch "
                 android:textColor="@color/white"
                 android:textSize="16dp"
+                android:fontFamily="sans-serif-condensed"
+                android:letterSpacing="0.1"
                 android:textStyle="bold"
-                android:drawableLeft="@drawable/graduation_hat"
                 />
 
             <TextView
@@ -136,7 +137,7 @@
                 android:layout_marginRight="30dp"
                 android:textColor="#2972fe"
                 android:textSize="16dp"
-                android:textStyle="bold"
+                android:letterSpacing="0.1"
 
                 />
 
@@ -146,11 +147,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
-                android:text="  Location "
+                android:text="○ Location "
                 android:textColor="@color/white"
                 android:textSize="16dp"
+                android:fontFamily="sans-serif-condensed"
+                android:letterSpacing="0.1"
                 android:textStyle="bold"
-                android:drawableLeft="@drawable/location"
+
                 />
 
 
@@ -163,12 +166,12 @@
                 android:layout_marginRight="30dp"
                 android:textColor="#2972fe"
                 android:textSize="16dp"
-                android:textStyle="bold" />
+                android:letterSpacing="0.1"
+                />
 
             <View
-                android:layout_width="370dp"
-                android:layout_height="1dp"
-                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
                 android:layout_marginTop="20dp"
                 android:background="#394452" />
 
@@ -198,12 +201,11 @@
                     android:layout_marginRight="20dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
-                    android:text="Designation : "
+                    android:text="○ Designation : "
                     android:textColor="@color/white"
                     android:drawablePadding="10dp"
                     android:textSize="16dp"
                     android:textStyle="bold"
-                    android:drawableLeft="@drawable/dot_l"
                     />
 
 
@@ -220,7 +222,6 @@
                     android:textSize="16dp"
                     android:textStyle="bold"
                     android:drawablePadding="10dp"
-                    android:drawableLeft="@drawable/dot_l"
                     />
 
 
@@ -237,7 +238,7 @@
                     android:textSize="16dp"
                     android:textStyle="bold"
                     android:drawablePadding="10dp"
-                    android:drawableLeft="@drawable/dot_l"/>
+             />
 
 
 
@@ -249,12 +250,10 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"                    android:lineSpacingExtra="5dp"
+                    android:layout_marginBottom="10dp"                                    android:lineSpacingExtra="5dp"
                     android:textColor="@color/white"
                     android:textSize="15sp"
-                    android:drawablePadding="10dp"
-
-                    android:drawableLeft="@drawable/dot"/>
+                    android:drawablePadding="10dp" />
 
 
 
@@ -270,7 +269,7 @@
                     android:textSize="16dp"
                     android:textStyle="bold"
                     android:drawablePadding="10dp"
-                    android:drawableLeft="@drawable/dot_l"
+
                     />
 
 
@@ -285,7 +284,7 @@
                     android:textColor="@color/white"
                     android:textSize="15sp"
                     android:drawablePadding="10dp"
-                    android:drawableLeft="@drawable/dot"/>
+                 />
 
 
 
@@ -297,11 +296,11 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"                    android:lineSpacingExtra="5dp"
+                    android:layout_marginBottom="10dp"                                    android:lineSpacingExtra="5dp"
                     android:textColor="@color/white"
                     android:textSize="15sp"
                     android:drawablePadding="10dp"
-                    android:drawableLeft="@drawable/dot"/>
+                 />
 
 
                 <TextView
@@ -316,7 +315,6 @@
                     android:textSize="15sp"
                     android:drawablePadding="10dp"
 
-                    android:drawableLeft="@drawable/dot"
                     />
 
 
@@ -333,7 +331,6 @@
                     android:textSize="15sp"
                     android:drawablePadding="10dp"
 
-                    android:drawableLeft="@drawable/dot"
                     />
 
 
@@ -351,7 +348,7 @@
                     android:textSize="15sp"
                     android:drawablePadding="10dp"
 
-                    android:drawableLeft="@drawable/dot"/>
+                   />
 
 
             </LinearLayout>
@@ -361,9 +358,7 @@
         <View
             android:id="@+id/last_line"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
+            android:layout_height="0.6dp"
             android:background="#394452"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout_3"
             app:layout_constraintEnd_toEndOf="parent"
@@ -374,7 +369,6 @@
             android:id="@id/linearLayout_3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -382,24 +376,29 @@
             app:layout_constraintTop_toBottomOf="@id/last_line">
 
 
-            <ImageButton
-                android:layout_width="70dp"
-                android:layout_height="65dp"
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:backgroundTint="#101725"
-                app:tint="#2257bd"
-                app:srcCompat="@drawable/share"
-          />
+                android:drawableTint="#2972fe"
+                android:drawableLeft="@drawable/share_5"
+                android:gravity="center"
+                app:cornerRadius="11dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:onClick="share_btn"
 
+                />
             <Button
                 android:id="@+id/applynow"
-                android:layout_width="280dp"
-                android:layout_height="70dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
                 android:layout_marginLeft="20dp"
                 android:backgroundTint="#2972fe"
                 android:text="Apply Now !"
                 android:textColor="#ffffff"
-                app:cornerRadius="100dp" />
-
+                app:cornerRadius="100dp"
+                android:layout_marginRight="10dp"/>
         </LinearLayout>
 
 

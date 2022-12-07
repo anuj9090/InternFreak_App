@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "727681294164",
+    "project_id": "internfreaknotification",
+    "storage_bucket": "internfreaknotification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727681294164:android:1ea3f9de72a29b980232c1",
+        "android_client_info": {
+          "package_name": "com.example.myapplication2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727681294164-fmepnda4vq85grvitcqr276evdtuvtch.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnVSctgzSftmEmNaqBCmnd_dRFruyT5_E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727681294164-fmepnda4vq85grvitcqr276evdtuvtch.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

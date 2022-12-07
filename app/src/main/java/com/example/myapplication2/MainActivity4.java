@@ -14,7 +14,7 @@ import android.view.animation.Animation;
 import android.widget.ImageView;
 
 public class MainActivity4 extends AppCompatActivity {
-    private static int Splash_Screen_timeout = 2000;
+    private static int Splash_Screen_timeout = 1000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +27,8 @@ public class MainActivity4 extends AppCompatActivity {
             @Override
             public void run() {
                 Intent intent = new Intent(MainActivity4.this, MainActivity2.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);
-                finish();
             }
         },Splash_Screen_timeout);
 

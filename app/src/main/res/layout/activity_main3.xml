@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity3">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:backgroundTint="#101725"
+            android:drawableTop="@drawable/left"
+            android:drawableTint="#2257bd"
+            app:cornerRadius="11dp"
+            android:onClick="go_back"
+            />
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="60dp"
+            android:text="Resources"
+            android:textColor="@color/white"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/tip_1"
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:neumorph_backgroundColor="#4182ff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_1"
+        app:neumorph_lightSource="rightBottom"
+        app:neumorph_shadowColorLight="#19235c"
+        app:neumorph_shadowColorDark="#19235c"
+        app:neumorph_shadowElevation="8dp">
+
+
+        <ImageView
+            android:id="@+id/logo1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="end"
+            android:src="@drawable/open_book"
+            />
+
+
+        <TextView
+            android:id="@+id/logo1_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="All SDE Sheets\nAt One Place"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            >
+        </TextView>
+
+
+
+
+        <Button
+            android:id="@+id/read_more_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Know More"
+            android:backgroundTint="#ffc532"
+            android:layout_gravity="bottom"
+            app:cornerRadius="15dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_margin="20dp"
+            android:onClick="tip_1_clicked"
+            />
+
+
+
+    </soup.neumorphism.NeumorphCardView>
+
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/tip_2"
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:neumorph_backgroundColor="#ffc532"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tip_1"
+        app:neumorph_shadowColorLight="#594410"
+        app:neumorph_shadowColorDark="#594410"
+        app:neumorph_shadowElevation="8dp" >
+
+
+        <ImageView
+            android:id="@+id/logo2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="end"
+            android:src="@drawable/writing"
+            />
+
+
+        <TextView
+            android:id="@+id/logo2_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:text="Pro Tips For\nYour Resume"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            />
+
+
+        <Button
+            android:id="@+id/read_more_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Know More"
+            android:backgroundTint="#3f80ff"
+            android:layout_gravity="bottom"
+            app:cornerRadius="15dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_margin="20dp"
+            android:onClick="tip_2_clicked"
+            />
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/tip_3"
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:neumorph_backgroundColor="#e63254"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tip_2"
+        app:neumorph_shadowColorLight="#5b1222"
+        app:neumorph_shadowColorDark="#5b1222"
+        app:neumorph_shadowElevation="8dp">
+
+
+        <ImageView
+            android:id="@+id/logo3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="end"
+            android:src="@drawable/search_1"
+            />
+
+
+        <TextView
+            android:id="@+id/logo3_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:text="Top 10 Most\nSearched Skill"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            />
+        <View
+            android:id="@+id/line3"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="120dp"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/read_more_btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Know More"
+            android:backgroundTint="#ffc532"
+            android:layout_gravity="bottom"
+            app:cornerRadius="15dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_margin="20dp"
+            android:onClick="tip_3_clicked"
+
+            />
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <View
+        android:id="@+id/line"
+        app:layout_constraintBottom_toTopOf="@id/navigation_bar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#394452" />
+
+
+    <LinearLayout
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:weightSum="4">
+
+
+        <Button
+            android:id="@+id/home_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:drawableLeft="@drawable/house"
+            android:layout_weight="1"
+            android:onClick="go_to_home"
+            />
+
+        <Button
+            android:id="@+id/home_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:drawableLeft="@drawable/information_1"
+            android:layout_weight="1"
+            android:onClick="vibrate"
+
+            />
+
+        <Button
+            android:id="@+id/home_btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:drawableLeft="@drawable/information_1"
+            android:layout_weight="1"
+            android:onClick="go_to_support"
+
+            />
+
+        <Button
+            android:id="@+id/home_btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:drawableLeft="@drawable/information_2"
+            android:layout_weight="1"
+            android:onClick="go_to_about_us"
+
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

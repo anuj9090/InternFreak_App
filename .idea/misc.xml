@@ -3,13 +3,32 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/anuj/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/avatar_1.xml" value="0.1805" />
+        <entry key="..\:/Users/anuj/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/avatar_10.xml" value="0.1805" />
+        <entry key="..\:/Users/anuj/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/avatar_11.xml" value="0.1805" />
+        <entry key="..\:/Users/anuj/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/avatar_12.xml" value="0.1805" />
+        <entry key="..\:/Users/anuj/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/avatar_13.xml" value="0.1805" />
+        <entry key="..\:/Users/anuj/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/avatar_14.xml" value="0.1805" />
+        <entry key="..\:/Users/anuj/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/avatar_7.xml" value="0.1805" />
+        <entry key="..\:/Users/anuj/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/custom_progress_bg.xml" value="0.151" />
+        <entry key="..\:/Users/anuj/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/game_ctl_btn.xml" value="0.1625" />
+        <entry key="..\:/Users/anuj/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/nav_btn_bg.xml" value="0.1625" />
         <entry key="..\:/Users/anuj/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/rounded_corner.xml" value="0.1805" />
         <entry key="..\:/Users/anuj/AndroidStudioProjects/MyApplication2/app/src/main/res/layout-w1240dp/activity_main3.xml" value="0.2931972789115646" />
-        <entry key="..\:/Users/anuj/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/anuj/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/anuj/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main2.xml" value="0.25" />
-        <entry key="..\:/Users/anuj/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main3.xml" value="0.22447916666666667" />
-        <entry key="..\:/Users/anuj/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main4.xml" value="0.12" />
+        <entry key="..\:/Users/anuj/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main3.xml" value="0.22" />
+        <entry key="..\:/Users/anuj/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main4.xml" value="0.15" />
+        <entry key="..\:/Users/anuj/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main5.xml" value="0.25" />
+        <entry key="..\:/Users/anuj/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main6.xml" value="0.25" />
+        <entry key="..\:/Users/anuj/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main7.xml" value="0.25" />
+        <entry key="..\:/Users/anuj/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main8.xml" value="0.22" />
+        <entry key="..\:/Users/anuj/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_snake_game.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/anuj/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/content_main.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/anuj/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/fragment_main.xml" value="0.21041666666666667" />
+        <entry key="..\:/Users/anuj/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/fragment_settings.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/anuj/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/list_group.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/anuj/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/list_item.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/anuj/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/multiple_posts.xml" value="0.22447916666666667" />
       </map>
     </option>

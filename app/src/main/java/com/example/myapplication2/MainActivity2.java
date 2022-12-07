@@ -8,15 +8,18 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.drawable.Drawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 
 import com.android.volley.Request;
@@ -58,7 +61,9 @@ public class MainActivity2 extends AppCompatActivity {
     public RecyclerView posts;
     public RelativeLayout noInternetLayout;
     public Button try_again_button;
-    public View post_1;
+    public View navigation_bar;
+    public View line;
+    public View progressbar;
 
 
     @Override
@@ -74,28 +79,35 @@ public class MainActivity2 extends AppCompatActivity {
         posts =findViewById(R.id.recyclerView);
         noInternetLayout  =findViewById(R.id.noInternetLayout);
         try_again_button  =findViewById(R.id.try_again_button);
-        post_1  =findViewById(R.id.post_1);
+        navigation_bar  =findViewById(R.id.navigation_bar);
+        line  =findViewById(R.id.line);
+        progressbar=findViewById(R.id.progressbar);
         posts.setLayoutManager(new LinearLayoutManager(this));
+
         drawLayout();
+
         try_again_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                vibrate(v);
                 drawLayout();
             }
         });
+
     }
 
 
     private void drawLayout() {
 
         if(isOnline()){
+
             posts.setVisibility(View.VISIBLE);
+            navigation_bar.setVisibility(View.VISIBLE);
             noInternetLayout.setVisibility(View.INVISIBLE);
-            post_1.setVisibility(View.VISIBLE);
-
-
 
             RequestQueue requestQueue;
+
+
             requestQueue = Volley.newRequestQueue(this);
             JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
                 @Override
@@ -146,12 +158,18 @@ public class MainActivity2 extends AppCompatActivity {
 
             requestQueue.add(jsonArrayRequest);
         }else {
-            posts.setVisibility(View.INVISIBLE);
-            post_1.setVisibility(View.INVISIBLE);
 
+            posts.setVisibility(View.INVISIBLE);
+            navigation_bar.setVisibility(View.INVISIBLE);
+            line.setVisibility(View.INVISIBLE);
+
+            progressbar.setVisibility(View.INVISIBLE);
             noInternetLayout.setVisibility(View.VISIBLE);
+
         }
     }
+
+
 
 
     public boolean isOnline() {
@@ -166,5 +184,24 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
 
+
+    public void vibrate(View view) {
+        Vibrator vibrator;
+        vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
+        vibrator.vibrate(50);
+    }
+
+    public void go_to_resources(View view) {
+        vibrate(view);
+        startActivity(new Intent(view.getContext(), MainActivity3.class));
+    }
+    public void go_to_support(View view) {
+        vibrate(view);
+        startActivity(new Intent(view.getContext(), MainActivity7.class));
+    }
+    public void go_to_about_us(View view) {
+        vibrate(view);
+        startActivity(new Intent(view.getContext(), MainActivity8.class));
+    }
 }
 
